@@ -16,6 +16,7 @@ body {
 }
 
 .logo {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -57,6 +58,7 @@ body {
 
 .address-style {
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-item {
@@ -118,6 +120,7 @@ body {
 }
 
 .page-footer {
+  padding: 100px 0;
   background-color: var(--navyblue);
 }
 
@@ -125,6 +128,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
+  max-width: 264px;
 }
 
 .main-section {
@@ -191,11 +195,13 @@ body {
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 156px;
-  padding-right: 156px;
-  margin-left: 0;
-  margin-right: 0;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container .page-footer {
+  flex-direction: column;
 }
 
 h1,
@@ -217,4 +223,37 @@ ol {
 
 img {
   display: block;
+}
+
+.page-header {
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.page-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-item {
+  padding: 24px 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 76px;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
