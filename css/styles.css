@@ -280,7 +280,6 @@ img {
 
 .benefits-section .item .paragraph {
   color: var(--slate);
-
   margin-bottom: 8px;
 }
 
@@ -291,6 +290,10 @@ img {
 .benefits-section .list {
   display: flex;
   gap: 24px;
+}
+
+.benefits-section .list .item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .doing-section {
@@ -308,7 +311,7 @@ img {
 }
 
 .doing-section .list .item {
-  width: calc((100% - 72px) / 3);
+  flex-basis: calc((100% - 72px) / 3);
 }
 
 .team-section {
@@ -327,7 +330,7 @@ img {
 
 .team-section .list .item {
   width: calc((100% - 72px) / 4);
-  border: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
   background: var(--white);
 }
 
