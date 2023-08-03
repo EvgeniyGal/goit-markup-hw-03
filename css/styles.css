@@ -123,6 +123,7 @@ body {
 
 .page-footer .logo {
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .page-footer .logo .general {
